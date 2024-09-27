@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <div class="weather-container">
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name" spellcheck="false">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="weather-details">
+                <div class="weather-icon-container">
+                    <img src="images/unknown.png" alt="Weather Icon" class="weather-icon" id="weather-icon">
+                    <p class="weather-condition" id="weather-condition"></p>
+                </div>
+                <h1 class="temp" id="temp"></h1>
+                <h2 class="city" id="city"></h2>
+                <div class="details">
+                    <div class="col left">
+                        <i class="fas fa-tint"></i>
+                        <div> 
+                            <p class="humidity" id="humidity"></p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col right">
+                        <i class="fas fa-wind"></i>
+                        <div> 
+                            <p class="wind" id="wind"></p>
+                            <p>Wind speed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="col left">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <div> 
+                            <p class="pressure" id="pressure"></p>
+                            <p>Pressure</p>
+                        </div>
+                    </div>
+                    <div class="col right">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <div> 
+                            <p class="date-time" id="date-time"></p>
+                            <p>Date and Time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-container">
+            <p>Copyright &#169; By <a href="https://www.surilpokharel.com.np" target="_blank">Suril Pokharel</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
